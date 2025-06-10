@@ -1,0 +1,17 @@
+@import "tailwindcss";
+
+body,
+:root {
+  background-color: #fff;
+  background-image: linear-gradient(to right, #f0f0f0 1px, transparent 1px),
+    linear-gradient(to bottom, #f0f0f0 1px, transparent 1px);
+  background-size: 6rem 4rem;
+}
+
+h1 {
+  @apply text-2xl font-bold text-gray-800;
+}
+
+i {
+  @apply text-gray-500 text-xs;
+}
