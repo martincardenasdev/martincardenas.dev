@@ -1,11 +1,11 @@
 ---
 import IslandWrapper from "../components/island-wrapper.astro";
+import Project from "./project.astro";
+import projects from "../data/projects.json";
 ---
 
 <IslandWrapper>
   <h1>Projects</h1>
 
-  <div class="mt-8">
-    <p>Project description here</p>
-  </div>
+  {projects.map((project) => <Project project={project} />)}
 </IslandWrapper>
