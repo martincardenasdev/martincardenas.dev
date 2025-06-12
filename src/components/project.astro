@@ -1,6 +1,14 @@
 ---
 import { Image } from "astro:assets";
 const { project } = Astro.props;
+
+function isProjectInProgress(status: string) {
+  return status === "progress";
+}
+
+function isProjectCompleted(status: string) {
+  return status === "completed";
+}
 ---
 
 <div
@@ -8,7 +16,23 @@ const { project } = Astro.props;
 >
   <div class="flex items-center justify-center min-w-2xl">
     <div class="w-3/4">
-      <h2 class="text-lg font-semibold">{project.title}</h2>
+      <div class="flex items-center gap-2">
+        <h2 class="text-lg font-semibold">{project.title}</h2>
+        {
+          isProjectInProgress(project.status) && (
+            <span class="rounded-full text-center border border-gray-300 shadow-sm px-3 py-1 text-xs font-medium text-gray-400 bg-gray-100 pointer-events-none">
+              Currently in progress
+            </span>
+          )
+        }
+        {
+          isProjectCompleted(project.status) && (
+            <span class="rounded-full text-center border border-green-400 shadow-sm px-3 py-1 text-xs font-medium text-green-600 bg-green-100 pointer-events-none">
+              Completed
+            </span>
+          )
+        }
+      </div>
       <p>{project.shortDescription}</p>
       <i>{project.techStack.join(", ")}</i>
     </div>
