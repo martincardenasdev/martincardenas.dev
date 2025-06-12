@@ -1,0 +1,42 @@
+---
+import IslandWrapper from "./island-wrapper.astro";
+---
+
+<IslandWrapper>
+  <h1>Contact</h1>
+
+  <form class="mt-8 space-y-4">
+    <div class="flex items-center justify-center gap-4">
+      <div>
+        <label for="name-helper-text" class="text-sm font-medium">Name</label>
+        <input
+          id="name-helper-text"
+          type="text"
+          class="mt-2 bg-white border border-slate-200 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-[250px] p-2.5"
+          placeholder="name@domain.com"
+        />
+      </div>
+      <div>
+        <label for="email-helper-text" class="text-sm font-medium">Email</label>
+        <input
+          id="email-helper-text"
+          type="email"
+          class="mt-2 bg-white border border-slate-200 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-[250px] p-2.5"
+          placeholder="name@domain.com"
+        />
+      </div>
+    </div>
+    <label for="msg-helper-text" class="text-sm font-medium">Message</label>
+    <textarea
+      id="msg-helper-text"
+      class="mt-2 bg-white border border-slate-200 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full h-[150px] p-2.5 resize-none"
+      placeholder="Your message"></textarea>
+
+    <button
+      type="submit"
+      class="flex items-center justify-center w-full rounded-full border border-gray-800 shadow-sm px-4 py-2 text-sm text-white bg-[#24292F] hover:bg-[#24292F]/90 focus:ring-4 focus:outline-none focus:ring-[#24292F]/50 font-medium cursor-pointer"
+    >
+      Send
+    </button>
+  </form>
+</IslandWrapper>
