@@ -1,31 +1,31 @@
 ---
-const { date, jobTitle, company, description } = Astro.props;
+const { date, jobTitle, company, bulletPoints } = Astro.props;
 ---
 
 <div class="relative">
   <div class="md:flex items-center md:space-x-4 mb-3">
     <div class="flex items-center space-x-4 md:space-x-2 md:space-x-reverse">
-      <!-- Icon -->
       <div
         class="flex items-center justify-center size-5 rounded-full bg-white shadow md:order-1"
       >
       </div>
-      <!-- Date -->
       <time class="font-caveat font-medium text-xs text-gray-500 md:w-32"
         >{date}</time
       >
     </div>
-    <!-- Title -->
     <div class="text-slate-500">
       <span class="text-slate-900 font-bold">{jobTitle}</span> at <span
         class="text-slate-900 font-bold">{company}</span
       >
     </div>
   </div>
-  <!-- Card -->
-  <div
-    class="bg-white p-4 rounded border border-slate-200 text-slate-500 shadow ml-14 md:ml-44 max-w-4xl"
-  >
-    {description}
-  </div>
+  {
+    bulletPoints && bulletPoints.length > 0 && (
+      <ul class="bg-white p-4 rounded border border-slate-200 text-sm shadow ml-14 md:ml-44 max-w-4xl space-y-1 text-gray-500 list-disc list-inside">
+        {bulletPoints.map((point: string) => (
+          <li>{point}</li>
+        ))}
+      </ul>
+    )
+  }
 </div>
