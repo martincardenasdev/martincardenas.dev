@@ -1,42 +1,29 @@
 ---
-import IslandWrapper from "./island-wrapper.astro";
+const { name, email } = Astro.props;
 ---
 
-<IslandWrapper>
-  <h1>Contact</h1>
-
-  <form class="mt-8 space-y-4">
-    <div class="flex items-start gap-4">
-      <div>
-        <label for="name-helper-text" class="text-sm font-medium">Name</label>
-        <input
-          id="name-helper-text"
-          type="text"
-          class="mt-2 bg-white border border-slate-200 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-[250px] p-2.5"
-          placeholder="name@domain.com"
-        />
-      </div>
-      <div>
-        <label for="email-helper-text" class="text-sm font-medium">Email</label>
-        <input
-          id="email-helper-text"
-          type="email"
-          class="mt-2 bg-white border border-slate-200 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-[250px] p-2.5"
-          placeholder="name@domain.com"
-        />
-      </div>
-    </div>
-    <label for="msg-helper-text" class="text-sm font-medium">Message</label>
-    <textarea
-      id="msg-helper-text"
-      class="mt-2 bg-white border border-slate-200 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full h-[150px] p-2.5 resize-none"
-      placeholder="Your message"></textarea>
-
-    <button
-      type="submit"
-      class="flex items-center justify-center w-full rounded-full border border-gray-800 shadow-sm px-4 py-2 text-sm text-white bg-[#24292F] hover:bg-[#24292F]/90 focus:ring-4 focus:outline-none focus:ring-[#24292F]/50 font-medium cursor-pointer"
+<div class="mt-8 flex flex-col items-start gap-4">
+  <a
+    href={`mailto:${email}?body=Hello,%20${name}`}
+    target="_blank"
+    class="flex gap-2 items-center rounded-full border border-gray-300 shadow-sm px-4 py-2 text-sm font-medium hover:bg-gray-100/90 focus:ring-4 bg-gray-100 focus:outline-none focus:ring-gray-100/50"
+  >
+    <svg
+      class="w-6 h-6 text-gray-800 dark:text-white"
+      aria-hidden="true"
+      xmlns="http://www.w3.org/2000/svg"
+      width="24"
+      height="24"
+      fill="none"
+      viewBox="0 0 24 24"
     >
-      Send
-    </button>
-  </form>
-</IslandWrapper>
+      <path
+        stroke="currentColor"
+        stroke-linecap="round"
+        stroke-width="2"
+        d="m3.5 5.5 7.893 6.036a1 1 0 0 0 1.214 0L20.5 5.5M4 19h16a1 1 0 0 0 1-1V6a1 1 0 0 0-1-1H4a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1Z"
+      ></path>
+    </svg>
+    {email}
+  </a>
+</div>

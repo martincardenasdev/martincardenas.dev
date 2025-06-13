@@ -3,6 +3,7 @@ import Contact from "../components/contact.astro";
 import Experience from "../components/experience.astro";
 import Profile from "../components/profile.astro";
 import Projects from "../components/projects.astro";
+import profile from "../data/profile.json";
 ---
 
 <html lang="en">
@@ -12,19 +13,21 @@ import Projects from "../components/projects.astro";
     <link rel="stylesheet" href="src/styles/global.css" />
     <meta name="viewport" content="width=device-width" />
     <meta name="generator" content={Astro.generator} />
-    <title>Martín Cárdenas portfolio</title>
+    <title>{profile.name} portfolio</title>
   </head>
 
   <body class="flex justify-center items-center min-h-dvh">
     <div class="flex gap-8">
       <div class="flex flex-col gap-8 items-stretch">
-        <Profile />
-        <Projects />
+        <Profile profile={profile} />
+        <Experience />
       </div>
       <div class="flex flex-col items-stretch gap-8 w-max">
-        <Experience />
-        <Contact />
+        <Projects />
       </div>
+    </div>
+    <div class="fixed bottom-8 left-0 right-0 flex justify-center items-center">
+      <Contact name={profile.name} email={profile.email} />
     </div>
   </body>
 </html>
