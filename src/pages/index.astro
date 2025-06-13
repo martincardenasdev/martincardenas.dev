@@ -20,11 +20,9 @@ import profile from "../data/profile.json";
     <div class="flex gap-8">
       <div class="flex flex-col gap-8 items-stretch">
         <Profile profile={profile} />
-        <Experience />
+        <div class="flex flex-grow"><Experience /></div>
       </div>
-      <div class="flex flex-col items-stretch gap-8 w-max">
-        <Projects />
-      </div>
+      <Projects />
     </div>
     <div class="fixed bottom-8 left-0 right-0 flex justify-center items-center">
       <Contact name={profile.name} email={profile.email} />
