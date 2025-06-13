@@ -25,7 +25,12 @@ import profile from "../data/profile.json";
       <Projects />
     </div>
     <div class="fixed bottom-8 left-0 right-0 flex justify-center items-center">
-      <Contact name={profile.name} email={profile.email} />
+      <Contact
+        name={profile.name}
+        email={profile.email}
+        phoneNumber={profile.phoneNumber}
+        phoneNumberLabel={profile.phoneNumberLabel}
+      />
     </div>
   </body>
 </html>
