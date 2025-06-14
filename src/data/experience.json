@@ -1,0 +1,22 @@
+[
+  {
+    "date": "Apr 2025 - Present",
+    "jobTitle": "Mid software engineer",
+    "company": {
+      "name": "ArkusNexus",
+      "url": "https://www.arkusnexus.com/"
+    },
+    "description": "Building and maintaining accessible focused web applications for a pet insurance company. My role involves integration of new brands into existing systems, improving existing functionalities, and ensuring the applications are user-friendly and efficient.",
+    "bulletPoints": []
+  },
+  {
+    "date": "May 2024 - Apr 2025",
+    "jobTitle": "Jr software engineer",
+    "company": {
+      "name": "ArkusNexus",
+      "url": "https://www.arkusnexus.com/"
+    },
+    "description": "Developed solutions for a FP&A company, focusing on data integration and transformation. In my role, I have worked on various projects involving data pipelines, ETL processes, and integration with third-party services.",
+    "bulletPoints": []
+  }
+]

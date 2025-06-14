@@ -1,0 +1,13 @@
+{
+  "name": "Martín Cárdenas",
+  "occupation": "Software engineer",
+  "description": "Software engineer with 2+ years of experience. My goal is to build fast and scalable applications that improve people's lives.",
+  "technologies": ["TypeScript", ".NET"],
+  "email": "martiinca.dev@gmail.com",
+  "phoneNumber": "526871177057",
+  "phoneNumberLabel": "+52 (687) 117 7057",
+  "urls": {
+    "github": "https://github.com/ipg-mcardenas",
+    "linkedin": "https://www.linkedin.com/in/martin-cardenas/"
+  }
+}
