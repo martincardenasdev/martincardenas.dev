@@ -1,4 +1,5 @@
 ---
+import { flags } from "../../flags";
 const { date, jobTitle, company, bulletPoints } = Astro.props;
 ---
 
@@ -20,7 +21,7 @@ const { date, jobTitle, company, bulletPoints } = Astro.props;
     </div>
   </div>
   {
-    bulletPoints && bulletPoints.length > 0 && (
+    flags.showWorkExperienceBulletPoints && bulletPoints.length > 0 && (
       <ul class="bg-white p-4 rounded border border-slate-200 text-sm shadow ml-14 md:ml-44 max-w-4xl space-y-1 text-gray-500 list-disc list-inside">
         {bulletPoints.map((point: string) => (
           <li>{point}</li>

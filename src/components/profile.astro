@@ -5,11 +5,12 @@ const { profile } = Astro.props;
 ---
 
 <IslandWrapper
-  ><h1>{profile.name}</h1>
-  <i>{profile.occupation}</i>
+  ><div class="p-0 m-0 leading-none space-y-0">
+    <h1>{profile.name}</h1>
+    <i>{profile.occupation}</i>
+  </div>
 
-  <div class="mt-8">
-    <p>{profile.title}</p>
+  <div class="my-8">
     <p class="mb-4">{profile.description}</p>
   </div>
 
