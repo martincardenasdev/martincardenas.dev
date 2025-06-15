@@ -7,39 +7,46 @@ const { date, jobTitle, company, bulletPoints, description } = Astro.props;
   <div class="md:flex items-center md:space-x-4 mb-3">
     <div class="flex items-center space-x-4 md:space-x-2 md:space-x-reverse">
       <div
-        class="flex items-center justify-center size-5 rounded-full bg-white shadow md:order-1"
+        class="flex items-center justify-center size-3 rounded-full bg-white shadow md:order-1"
       >
       </div>
       <time class="font-caveat font-medium text-xs text-gray-500 md:w-32"
         >{date}</time
       >
     </div>
-    <div class="text-slate-500 flex gap-1 items-center">
-      <span class="text-slate-900 font-bold">{jobTitle}</span> at <span
-        class="text-slate-900 font-bold">{company.name}</span
-      >{
-        flags.redirectToCompanyUrl && (
-          <a href={company.url} target="_blank">
-            <svg
-              class="w-[16px] h-[16px] text-gray-800 cursor-pointer"
-              aria-hidden="true"
-              xmlns="http://www.w3.org/2000/svg"
-              width="24"
-              height="24"
-              fill="none"
-              viewBox="0 0 24 24"
+    <div class="text-slate-500 ml-7 md:ml-0">
+      <p class="flex items-center flex-wrap">
+        <span class="text-slate-900 font-bold">{jobTitle}</span>
+        <span class="mx-1">at</span>
+        <span class="text-slate-900 font-bold">{company.name}</span>
+        {
+          flags.redirectToCompanyUrl && (
+            <a
+              href={company.url}
+              target="_blank"
+              class="inline-flex items-center ml-1"
             >
-              <path
-                stroke="currentColor"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="2"
-                d="M18 14v4.833A1.166 1.166 0 0 1 16.833 20H5.167A1.167 1.167 0 0 1 4 18.833V7.167A1.166 1.166 0 0 1 5.167 6h4.618m4.447-2H20v5.768m-7.889 2.121 7.778-7.778"
-              />
-            </svg>
-          </a>
-        )
-      }
+              <svg
+                class="w-[16px] h-[16px] text-gray-800 cursor-pointer"
+                aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                fill="none"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M18 14v4.833A1.166 1.166 0 0 1 16.833 20H5.167A1.167 1.167 0 0 1 4 18.833V7.167A1.166 1.166 0 0 1 5.167 6h4.618m4.447-2H20v5.768m-7.889 2.121 7.778-7.778"
+                />
+              </svg>
+            </a>
+          )
+        }
+      </p>
     </div>
   </div>
   {

@@ -15,3 +15,7 @@ h1 {
 i {
   @apply text-gray-500 text-xs;
 }
+
+@theme {
+  --breakpoint-3xl: 1748px;
+}

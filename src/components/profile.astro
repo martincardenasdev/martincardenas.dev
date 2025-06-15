@@ -14,11 +14,11 @@ const { profile } = Astro.props;
     <p class="mb-4">{profile.description}</p>
   </div>
 
-  <div class="flex items-center gap-2">
+  <div class="flex lg:items-center flex-col sm:flex-row gap-2">
     <a
       href={profile.urls.github}
       target="_blank"
-      class="flex rounded-full border border-gray-800 shadow-sm px-4 py-2 text-sm text-white bg-[#24292F] hover:bg-[#24292F]/90 focus:ring-4 focus:outline-none focus:ring-[#24292F]/50 font-medium"
+      class="flex items-center justify-center rounded-full border border-gray-800 shadow-sm px-4 py-2 text-sm text-white bg-[#24292F] hover:bg-[#24292F]/90 focus:ring-4 focus:outline-none focus:ring-[#24292F]/50 font-medium"
     >
       <svg
         class="w-5 h-5 mr-2 align-middle"
@@ -38,7 +38,7 @@ const { profile } = Astro.props;
     <a
       href={profile.urls.linkedin}
       target="_blank"
-      class="flex rounded-full border border-[#084C91] shadow-sm px-4 py-2 text-sm text-white bg-[#0B66C2] hover:bg-[#0B66C2]/90 focus:ring-4 focus:outline-none focus:ring-[#0B66C2]/50 font-medium"
+      class="flex items-center justify-center rounded-full border border-[#084C91] shadow-sm px-4 py-2 text-sm text-white bg-[#0B66C2] hover:bg-[#0B66C2]/90 focus:ring-4 focus:outline-none focus:ring-[#0B66C2]/50 font-medium"
     >
       <svg
         xmlns="http://www.w3.org/2000/svg"
@@ -56,7 +56,7 @@ const { profile } = Astro.props;
     <a
       href="../data/cv.pdf"
       download
-      class="flex rounded-full border border-gray-300 shadow-sm px-4 py-2 text-sm font-medium hover:bg-gray-100/90 focus:ring-4 bg-gray-100 focus:outline-none focus:ring-gray-100/50"
+      class="flex items-center justify-center rounded-full border border-gray-300 shadow-sm px-4 py-2 text-sm font-medium hover:bg-gray-100/90 focus:ring-4 bg-gray-100 focus:outline-none focus:ring-gray-100/50"
     >
       <svg
         class="w-5 h-5 mr-2 align-middle"
