@@ -51,7 +51,7 @@ const { date, jobTitle, company, bulletPoints, description } = Astro.props;
   </div>
   {
     flags.showWorkExperienceBulletPoints && bulletPoints.length > 0 && (
-      <ul class="bg-gray-50 p-4 rounded border border-slate-200 text-sm  ml-14 md:ml-44 max-w-4xl space-y-1 text-gray-500 list-disc list-inside">
+      <ul class="bg-gray-50 p-4 rounded border border-slate-200 text-sm ml-7 md:ml-41.5 max-w-4xl space-y-1 text-gray-500 list-disc list-inside">
         {bulletPoints.map((point: string) => (
           <li>{point}</li>
         ))}
@@ -60,7 +60,7 @@ const { date, jobTitle, company, bulletPoints, description } = Astro.props;
   }
   {
     !flags.showWorkExperienceBulletPoints && (
-      <div class="bg-gray-50 p-4 rounded border border-slate-200 text-sm  ml-14 md:ml-44 max-w-4xl space-y-1 text-gray-500 list-disc list-inside">
+      <div class="bg-gray-50 p-4 rounded border border-slate-200 text-sm ml-7 md:ml-41.5 max-w-4xl space-y-1 text-gray-500 list-disc list-inside">
         <p>{description}</p>
       </div>
     )
