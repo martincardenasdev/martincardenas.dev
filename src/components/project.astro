@@ -14,7 +14,7 @@ function isProjectCompleted(status: string) {
 ---
 
 <div
-  class="mt-8 bg-gray-50 rounded-md border border-slate-200 shadow flex flex-col justify-center py-4 px-8"
+  class="mt-8 bg-gray-50 rounded-md border border-slate-200 flex flex-col justify-center py-4 px-8"
 >
   <div
     class="flex gap-4 lg:gap-0 lg:items-center lg:flex-row flex-col justify-center lg:min-w-2xl"
@@ -24,14 +24,14 @@ function isProjectCompleted(status: string) {
         <h2 class="text-lg font-semibold">{project.title}</h2>
         {
           isProjectInProgress(project.status) && (
-            <span class="rounded-full text-center border border-gray-300 shadow-sm px-3 py-1 text-xs font-medium text-gray-400 bg-gray-100 pointer-events-none">
+            <span class="rounded-full text-center border border-gray-300 px-3 py-1 text-xs font-medium text-gray-400 bg-gray-100 pointer-events-none">
               In progress
             </span>
           )
         }
         {
           isProjectCompleted(project.status) && (
-            <span class="rounded-full text-center border border-green-400 shadow-sm px-3 py-1 text-xs font-medium text-green-600 bg-green-100 pointer-events-none">
+            <span class="rounded-full text-center border border-green-400 px-3 py-1 text-xs font-medium text-green-600 bg-green-100 pointer-events-none">
               Completed
             </span>
           )
@@ -45,7 +45,7 @@ function isProjectCompleted(status: string) {
         <a
           href={project.gitHubUrl}
           target="_blank"
-          class="flex items-center justify-center w-full rounded-full border border-gray-800 shadow-sm px-4 py-2 text-sm text-white bg-[#24292F] hover:bg-[#24292F]/90 focus:ring-4 focus:outline-none focus:ring-[#24292F]/50 font-medium"
+          class="flex items-center justify-center w-full rounded-full border border-gray-800 px-4 py-2 text-sm text-white bg-[#24292F] hover:bg-[#24292F]/90 focus:ring-4 focus:outline-none focus:ring-[#24292F]/50 font-medium"
         >
           <svg
             class="w-5 h-5 mr-2"
@@ -64,7 +64,7 @@ function isProjectCompleted(status: string) {
 
         <a
           href={project.demoUrl || "#"}
-          class="rounded-full w-full text-center border border-gray-300 shadow-sm px-4 py-2 text-sm font-medium text-gray-400 bg-gray-100 pointer-events-none"
+          class="rounded-full w-full text-center border border-gray-300 px-4 py-2 text-sm font-medium text-gray-400 bg-gray-100 pointer-events-none"
         >
           {project.demoUrl ? "Live demo" : "Demo not available"}
         </a>
@@ -80,7 +80,7 @@ function isProjectCompleted(status: string) {
             loading="lazy"
             width={400}
             height={225}
-            class="rounded-md shadow border border-gray-300 p-2"
+            class="rounded-md border border-gray-300 p-2"
             alt={project.title}
           />
         ))}
