@@ -2,18 +2,33 @@
 
 body,
 :root {
-  background-color: #fff;
-  background-image: linear-gradient(to right, #f0f0f0 1px, transparent 1px),
-    linear-gradient(to bottom, #f0f0f0 1px, transparent 1px);
-  background-size: 6rem 4rem;
+  background-color: white;
+  background-size: 16px 16px;
+  background-image: radial-gradient(#e5e7eb 1px, transparent 1px);
+}
+
+@media (prefers-color-scheme: dark) {
+  body,
+  :root {
+    background-color: #1e1e1e;
+    background-image: radial-gradient(#3e3e42 1px, transparent 1px);
+  }
 }
 
 h1 {
-  @apply text-2xl font-bold text-gray-800;
+  @apply text-2xl font-bold text-gray-800 dark:text-white;
 }
 
 i {
-  @apply text-gray-500 text-xs;
+  @apply text-gray-500 text-xs dark:text-white;
+}
+
+p,
+span,
+h2,
+a,
+svg {
+  @apply dark:text-white;
 }
 
 @theme {
