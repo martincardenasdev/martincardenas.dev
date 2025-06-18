@@ -54,8 +54,8 @@ const { profile } = Astro.props;
     </a>
 
     <a
-      href="../data/cv.pdf"
-      download
+      href={profile.urls.cv}
+      target="_blank"
       class="flex items-center justify-center rounded-full border border-slate-200 dark:border-[#3e3e42] px-4 py-2 text-sm font-medium hover:bg-gray-100/90 focus:ring-4 bg-gray-100 dark:bg-[#2d2d30] focus:outline-none focus:ring-gray-100/50"
     >
       <svg
