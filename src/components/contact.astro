@@ -13,7 +13,9 @@ function getEmail() {
 }
 ---
 
-<div class="flex lg:items-center flex-col sm:flex-row gap-4">
+<div
+  class=`flex lg:items-center flex-col sm:flex-row gap-4 ${flags.enableAnimations ? "animate-fade-in-bottom" : ""}`
+>
   <a
     href={`mailto:${email}?body=Hello,%20${name}`}
     target="_blank"

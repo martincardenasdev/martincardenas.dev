@@ -3,4 +3,5 @@ export const flags = {
   showProjectImages: false,
   showWorkExperienceBulletPoints: false,
   redirectToCompanyUrl: true,
+  enableAnimations: true,
 };

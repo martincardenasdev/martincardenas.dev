@@ -1,5 +1,17 @@
+---
+import { flags } from "../../flags";
+const { animationName = "fade-in-left" } = Astro.props;
+
+function getAnimationClass() {
+  return (
+    flags.enableAnimations &&
+    `animate-${animationName} [@media(max-width:1748px)]:animate-fade-in-top`
+  );
+}
+---
+
 <div
-  class=`bg-white dark:bg-[#1e1e1e] border border-slate-200 dark:border-[#3e3e42] rounded-lg md:p-8 p-4 3xl:w-[825px]`
+  class=`bg-white dark:bg-[#1e1e1e] border border-slate-200 dark:border-[#3e3e42] rounded-lg md:p-8 p-4 3xl:w-[825px] ${getAnimationClass()}`
 >
   <slot />
 </div>
