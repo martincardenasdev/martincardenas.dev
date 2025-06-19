@@ -6,6 +6,9 @@
 * Fork the repository
 * Replace the .json files located in src/data
 
+## 🚩 Flags
+There are some features that can be turned on/off as you wish. These flags can be found at flags.ts
+
 ## 🪄 Run the project
 * ``bun dev`` run the local development server at ```localhost:4321```
 * ``bun build`` build production site
