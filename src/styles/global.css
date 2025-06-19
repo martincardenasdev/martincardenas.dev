@@ -96,3 +96,6 @@ svg {
     }
   }
 }
+
+@source inline("animate-fade-in-left");
+@source inline("animate-fade-in-right");
