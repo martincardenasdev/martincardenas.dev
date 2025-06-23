@@ -3,7 +3,7 @@
     "title": "SomeReads",
     "shortDescription": "Book management API that consumes Open Library API",
     "techStack": [".NET 9", "Dapper", "PostgreSQL"],
-    "gitHubUrl": "https://github.com/ipg-mcardenas/some.reads.tech",
+    "gitHubUrl": "https://github.com/martincardenasdev/some.reads.tech",
     "status": "progress",
     "demoUrl": "",
     "images": []
@@ -12,7 +12,7 @@
     "title": "Readaddicts",
     "shortDescription": "Readers social network",
     "techStack": ["Angular 17", ".NET 8", "PostgreSQL"],
-    "gitHubUrl": "https://github.com/ipg-mcardenas/ReadAddictsAngular",
+    "gitHubUrl": "https://github.com/martincardenasdev/ReadAddictsAngular",
     "status": "completed",
     "demoUrl": "",
     "images": []
@@ -21,7 +21,7 @@
     "title": "Project management software",
     "shortDescription": "Manage your projects and employees efficiently",
     "techStack": ["Next.js 14", ".NET 7", "PostgreSQL"],
-    "gitHubUrl": "https://github.com/ipg-mcardenas/Project-Management-Software-Next",
+    "gitHubUrl": "https://github.com/martincardenasdev/Project-Management-Software-Next",
     "status": "completed",
     "demoUrl": "",
     "images": []
