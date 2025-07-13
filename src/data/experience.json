@@ -16,7 +16,16 @@
       "name": "ArkusNexus",
       "url": "https://www.arkusnexus.com/"
     },
-    "description": "Developed solutions for a FP&A company, focusing on data integration and transformation. In my role, I have worked on various projects involving data pipelines, ETL processes, and integration with third-party services.",
+    "description": "Developed solutions for a Financial Planning & Analysis (FP&A) company, focusing on data integration and transformation. In my role, my work involved building data pipelines, integrating ETL processes and various third-party APIs.",
+    "bulletPoints": []
+  },
+  {
+    "date": "Oct 2022 - May 2024",
+    "jobTitle": "Jr software engineer",
+    "company": {
+      "name": "Pixxels"
+    },
+    "description": "Designed, implemented, and supported scalable software solutions across various projects. Tasks involved integrating new features and APIs and improving existing functionality.",
     "bulletPoints": []
   }
 ]

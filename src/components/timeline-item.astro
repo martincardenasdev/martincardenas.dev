@@ -20,7 +20,7 @@ const { date, jobTitle, company, bulletPoints, description } = Astro.props;
         <span class="mx-1">at</span>
         <span class="text-slate-900 font-bold">{company.name}</span>
         {
-          flags.redirectToCompanyUrl && (
+          flags.redirectToCompanyUrl && company.url && (
             <a
               href={company.url}
               target="_blank"
